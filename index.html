@@ -227,9 +227,17 @@ a{color:inherit;text-decoration:none}
 /* skills */
 .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
 .grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+.grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
+.grid2 .work .art{aspect-ratio:16/7}
+.grid2 .work .art img{max-height:120px}
+.grid2 .work .art.sq img{max-height:150px}
 .trusted{padding-block:44px 8px;background:var(--page)}
 .trusted-h{text-align:center;font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--ash-text);margin-bottom:22px}
-.logos{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.logos{display:flex;flex-wrap:wrap;justify-content:center;gap:16px}
+.logos .logo-card{flex:1 1 180px;max-width:224px}
+.logo-card.cream,.work .art.cream{background:#FDF5D7}
+.clients{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
+.clients .client{margin-top:0}
 .logo-card{height:96px;border-radius:18px;background:#FFFFFF;border:1px solid var(--ash-2);display:grid;place-items:center;padding:14px 20px;transition:transform .25s, box-shadow .25s, border-color .25s}
 .logo-card:hover{transform:translateY(-3px);border-color:rgba(117,52,178,.35);box-shadow:0 18px 32px -22px rgba(30,30,30,.45)}
 .logo-card img{max-width:100%;max-height:58px;width:auto;height:auto;object-fit:contain;display:block}
@@ -354,8 +362,10 @@ footer a:hover{color:#FFFFFF}
   .hero-copy{padding-block:32px 72px}
   .hero-copy{padding-block:16px 72px}
   .sec{padding-block:80px}
-  .chips,.grid3,.grid4,.edu{grid-template-columns:1fr}
-  .logos{grid-template-columns:1fr 1fr;gap:12px}
+  .chips,.grid3,.grid4,.grid2,.edu{grid-template-columns:1fr}
+  .grid2 .work .art{aspect-ratio:16/9}
+  .logos{gap:12px}
+  .logos .logo-card{flex:1 1 140px;max-width:calc(50% - 6px)}
   .logo-card{height:84px;padding:12px 14px}
   .ticker{padding-block:12px}
   .ticker span{font-size:15px;padding-right:20px}
@@ -438,6 +448,7 @@ footer a:hover{color:#FFFFFF}
         <div class="logo-card"><img src="assets/images/logo-hookslink.jpg" alt="Hookslink logo" loading="lazy" decoding="async"></div>
         <div class="logo-card"><img src="assets/images/logo-takitro.jpg" alt="Takitro logo" loading="lazy" decoding="async"></div>
         <div class="logo-card"><img src="assets/images/logo-harmony.jpg" alt="Harmony Lifestyle Clinic logo" loading="lazy" decoding="async"></div>
+        <div class="logo-card cream"><img src="assets/images/logo-soloshirts.jpg" alt="Solo Shirts logo" loading="lazy" decoding="async"></div>
       </div>
     </div>
   </section>
@@ -507,8 +518,10 @@ footer a:hover{color:#FFFFFF}
               <li>Wrote and published SEO-optimised blog articles for the clinic’s website.</li>
               <li>Managed the clinic’s Instagram and Facebook pages: content, posting and audience engagement.</li>
               <li>Administered the website through cPanel and the admin panel, handling page updates and ongoing maintenance.</li>
+              <li>Managed the Instagram and Facebook pages for Solo Shirts, a 100% pure linen clothing brand.</li>
+              <li>Worked in the development team building the Solo Shirts ERP system.</li>
             </ul>
-            <div class="client"><img src="assets/images/logo-harmony.jpg" alt="Harmony Lifestyle Clinic logo" loading="lazy" decoding="async"><span>Client · UK women’s health clinic</span></div>
+            <div class="clients"><div class="client"><img src="assets/images/logo-harmony.jpg" alt="Harmony Lifestyle Clinic logo" loading="lazy" decoding="async"><span>Client · UK women’s health clinic</span></div><div class="client"><img src="assets/images/logo-soloshirts.jpg" alt="Solo Shirts logo" loading="lazy" decoding="async"><span>Client · Linen clothing brand</span></div></div>
           </div>
         </article>
         <article class="job">
@@ -564,9 +577,9 @@ footer a:hover{color:#FFFFFF}
       <div class="head center">
         <span class="pill">Portfolio</span>
         <h2>Selected <span class="gold">Work</span>.</h2>
-        <p>Brands I’ve marketed across healthcare, agency clients and education.</p>
+        <p>Brands I’ve worked with across healthcare, education, fashion and agency clients.</p>
       </div>
-      <div class="grid3">
+      <div class="grid2">
         <article class="work">
           <div class="art"><img src="assets/images/logo-harmony.jpg" alt="Harmony Lifestyle Clinic logo" loading="lazy" decoding="async"></div>
           <div class="body">
@@ -594,6 +607,15 @@ footer a:hover{color:#FFFFFF}
             <h3>Northbridge Global Campus</h3>
             <p>All digital marketing for an international education startup, plus building and maintaining its website.</p>
             <div class="tags"><span class="tag">Social &amp; Ads</span><span class="tag">Website</span></div>
+          </div>
+        </article>
+        <article class="work">
+          <div class="art cream"><img src="assets/images/logo-soloshirts.jpg" alt="Solo Shirts logo" loading="lazy" decoding="async"></div>
+          <div class="body">
+            <span class="cat">Fashion · Social &amp; ERP</span>
+            <h3>Solo Shirts</h3>
+            <p>Managed the brand’s Instagram and Facebook pages, and worked in the team building its ERP system.</p>
+            <div class="tags"><span class="tag">Social Media</span><span class="tag">ERP Development</span></div>
           </div>
         </article>
       </div>
